@@ -16,6 +16,15 @@ winget install --id Git.Git -e --source winget
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
+### Docker
+```powershell
+winget install -e --id Docker.DockerDesktop
+```
+
+### Postman
+```powershell
+winget install -e --id Postman.Postman
+```
 
 ### Visual Studio
 
@@ -59,3 +68,4 @@ wsl --list --online
 ```powershell
 wsl --install -d Ubuntu-20.04
 ```
+

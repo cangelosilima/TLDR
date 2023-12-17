@@ -69,3 +69,76 @@ wsl --list --online
 wsl --install -d Ubuntu-20.04
 ```
 
+#### Linux Tools
+
+#### Unzip
+```bash
+sudo apt-get install unzip
+```
+
+Nerd Fonts
+```bash
+wget -P ~/.fonts 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AnonymousPro.zip'
+```
+```bash
+unzip ~/.fonts/AnonymousPro.zip -d ~/.fonts
+```
+
+
+#### Zsh shell and Oh My Zsh
+[Zsh](https://www.zsh.org/), short for Z Shell, is a powerful and feature-rich shell for Unix-like operating systems. It is an extended version of the Bourne Shell (sh) with many improvements and additional features. Zsh is highly customizable and provides an interactive command-line interface, making it popular among advanced users and developers.
+
+```bash
+sudo apt install zsh
+```
+And restart terminal
+
+```zsh
+mkdir ~/.fonts
+```
+```zsh
+wget -P ~/.fonts 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AnonymousPro.zip
+```
+
+[Oh My Zsh](https://ohmyz.sh/) is an open-source framework and community-driven configuration manager for Zsh. It was created to make it easier for users to manage and customize their Zsh environment. Oh My Zsh provides a collection of themes, plugins, and helper functions that enhance the functionality and appearance of Zsh, making it more user-friendly and visually appealing.
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Oh My Zsh themes can be fund at [Oh My Zsh on Github | Themes](https://github.com/ohmyzsh/ohmyzsh/tree/master/themes).
+1. Open your Zsh configuration file, typically located at ~/.zshrc, in a text editor.
+```zsh
+vim .zshrc
+```
+2. Locate the line that sets the ZSH_THEME variable. Assign the desired theme name (without the file extension) to the ZSH_THEME variable.
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+3. Apply changes
+```zsh
+source ~/.zshrc
+```
+
+*Themes and plugins*
+
+Powerlevel10k
+
+zsh-autosuggestions
+Zsh Autosuggestions is a feature that provides intelligent and context-aware suggestions as you type commands in the Zsh shell. It helps you complete your commands more efficiently by offering suggestions based on your command history. This feature is not part of the core Zsh shell but is often added using plugins, and it's a popular choice among Zsh users.
+
+```zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Set plugin and apply
+```zsh
+vim .zshrc
+```
+```
+plugins=(zsh-autosuggestions)
+```
+```zsh
+source ~/.zshrc
+```
+
+

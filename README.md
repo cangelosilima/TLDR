@@ -135,24 +135,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source ~/.zshrc
 ```
 
-*zsh-autosuggestions* is a feature that provides intelligent and context-aware suggestions as you type commands in the Zsh shell. It helps you complete your commands more efficiently by offering suggestions based on your command history. This feature is not part of the core Zsh shell but is often added using plugins, and it's a popular choice among Zsh users.
-
-```zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-1. Open your Zsh configuration file, typically located at ~/.zshrc, in a text editor.
-```zsh
-vim .zshrc
-```
-2. Locate the line that sets the plugins variable. Append the desired plugin name (without the file extension) to the plugins E variable.
-```
-plugins=(zsh-autosuggestions)
-```
-3. Apply changes
-```zsh
-source ~/.zshrc
-```
-
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) is a feature that provides intelligent and context-aware suggestions as you type commands in the Zsh shell. It helps you complete your commands more efficiently by offering suggestions based on your command history. This feature is not part of the core Zsh shell but is often added using plugins, and it's a popular choice among Zsh users.
 
 ```zsh

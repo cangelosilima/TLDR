@@ -30,6 +30,12 @@ winget install -e --id Docker.DockerDesktop
 winget install -e --id Postman.Postman
 ```
 
+### k6
+[k6](https://k6.io/) is an open-source performance testing tool that is used for testing the performance of APIs, microservices, and websites. It allows developers and QA engineers to create and run performance tests to evaluate the scalability and reliability of their applications.
+```powershell
+choco install k6
+```
+
 ### Visual Studio
 
 #### Code

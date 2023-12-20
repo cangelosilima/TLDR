@@ -61,7 +61,6 @@ Nerd Fonts is a collection of over-the-top, monospaced fonts designed for progra
 choco install nerd-fonts-meslo
 ```
 
-*Change Windows Terminal settings to use Nerd-Fonts*
 Because we want Windows Terminal to be able to render the icons in the powerlevel10k theme correctly, we need to change the Windows Terminal configuration to use the Nerd-Font we've downloaded before. Click on Settings in the Windows Terminal menu and edit the settings.json file with your favorite text editor.
 
 Find your wsl2 profile and add the line 

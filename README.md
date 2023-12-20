@@ -14,6 +14,7 @@ winget install --id Git.Git -e --source winget
 
 ### Chocolatey
 [Chocolatey](https://chocolatey.org/) is a package manager for Windows that automates the process of software installation, configuration, and maintenance. It provides a command-line interface (CLI) and a centralized repository of software packages, allowing users to easily install, update, and manage software on Windows systems.
+
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) 
 ```

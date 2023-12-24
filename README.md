@@ -1,6 +1,6 @@
 # TLTR Hub
 
-[Welcome](https://drive.google.com/file/d/1fqllTB9AaWOWv9jU3usNS_5HOUBMs4w-/view?usp=sharing)
+<img alt="Awesome GitHub Profile Readme" src="./.img/tldr-logo.jpg"> </img>
 
 *TLTR*, short for 'Too Long; Didn't Read,' is a widely recognized acronym used to succinctly summarize extensive pieces of text, articles, or documents.
 

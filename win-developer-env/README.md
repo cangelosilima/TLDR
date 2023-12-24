@@ -95,4 +95,4 @@ wsl --install -d Ubuntu-20.04
 ```
 
 > [!NOTE]
-> Once WSL and Linux distribution is intalled I used [Linux Or WSL Developer Environment](../linux-developer-env/README.md)
+> Once WSL and Linux distribution is intalled I configured with [Linux Or WSL Developer Environment](../linux-developer-env/README.md)

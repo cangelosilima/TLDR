@@ -98,3 +98,8 @@ For some projects in Docker and Kubernetes volumes I needed a NFS Server to stor
 ```zsh
 sudo mkdir -p /data/nfs-storage
 ```
+
+Install NFS Cliente
+```zsh
+sudo apt install nfs-common -y
+```

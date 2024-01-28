@@ -94,7 +94,26 @@ source ~/.zshrc
 ## NFS
 NFS, stands for "Network File System". NFS is a distributed file system protocol that allows a user on a client computer to access files over a network as if they were on the local computer. It enables remote access to files and directories.
 
-For some projects in Docker and Kubernetes volumes I needed a NFS Server to store data, so I used [nfs-server-alpine](https://hub.docker.com/r/itsthenetwork/nfs-server-alpine) and centralized at /data/nfs-storage
+For some projects in using Kubernetes persistence volumes I used a NFS Server to store data, so I used [nfs-server-alpine](https://hub.docker.com/r/itsthenetwork/nfs-server-alpine) and centralized at /data/nfs-storage
 ```zsh
 sudo mkdir -p /data/nfs-storage
+```
+```zsh
+sudo mkdir -p /mnt/nfs
+```
+```zsh
+sudo chown 1000:1000 nfs
+```
+```zsh
+sudo mount.nfs4 -v 10.10.10.69:/ /data/nfs-storage
+```
+
+
+## Azure
+
+If you install on windows envorionment it will reflect on wsl
+
+So modify the profile file ~/.profile by adding the following:
+```
+export KUBECONFIG=/mnt/c/Users/<windows user>/.kube/config
 ```

@@ -94,5 +94,27 @@ wsl --list --online
 wsl --install -d Ubuntu-20.04
 ```
 
+Create a .wslconfig file inside your %userprofile% folder to set global settings like memory limit:
+```powershell
+New-Item -Path $env:USERPROFILE -Name .wslconfig
+```
+```
+[wsl2]
+memory=3GB
+processors=2
+```
+
 > [!NOTE]
 > Once WSL and Linux distribution is intalled I used [Linux Or WSL Developer Environment](../linux-developer-env/README.md)
+
+### Azure
+[Microsoft Azure](https://azure.microsoft.com/pt-br/) is a cloud computing platform and a suite of services offered by Microsoft. It provides a wide range of cloud services, including computing power, storage, networking, databases, artificial intelligence (AI), machine learning (ML), analytics, Internet of Things (IoT), and mor
+
+Azure CLI. You might need to reboot your computer so installation is complete.
+```powershell
+winget install -e --id Microsoft.AzureCLI
+```
+
+```powershell
+az login
+```

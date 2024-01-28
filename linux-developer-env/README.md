@@ -108,6 +108,10 @@ sudo chown 1000:1000 nfs
 sudo mount.nfs4 -v 10.10.10.69:/ /data/nfs-storage
 ```
 
+Install NFS Cliente
+```zsh
+sudo apt install nfs-common -y
+```
 
 ## Azure
 
@@ -117,3 +121,5 @@ So modify the profile file ~/.profile by adding the following:
 ```
 export KUBECONFIG=/mnt/c/Users/<windows user>/.kube/config
 ```
+
+

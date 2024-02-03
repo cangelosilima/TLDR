@@ -118,3 +118,14 @@ winget install -e --id Microsoft.AzureCLI
 ```powershell
 az login
 ```
+
+### Terraform
+[Terraform](https://developer.hashicorp.com/terraform) is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It enables users to define and provision infrastructure resources in a declarative configuration language. With Terraform, you can describe the desired state of your infrastructure, and the tool will automatically create, modify, or destroy resources to match that state.
+
+> [!IMPORTANT]
+> Please be aware that the  Terraform package within Chocolatey is not directly maintained by HashiCorp. It is recommended to regularly check for newer versions directly on the official Terraform website to ensure that you are using the latest and most secure release. Always refer to the official source for the most up-to-date and reliable information on Terraform packages.
+
+So to install Terraform CLI from chocolatey:
+```powershell
+choco install terraform
+```

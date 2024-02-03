@@ -1,6 +1,8 @@
 # Windows Developer Environment
 This document compiles all the necessary installation and configuration steps required for setting up a development environment on a Windows 10 machine.
 
+<p align="right">(<a href="../README.md">back to beginning</a>)</p>
+
 > [!IMPORTANT]
 > For some installations steps in this tutorial you will need administrator privileges, so for a better experience, open all prompts in Administrator mode
 

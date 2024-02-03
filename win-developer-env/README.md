@@ -4,7 +4,35 @@ This document compiles all the necessary installation and configuration steps re
 > [!IMPORTANT]
 > For some installations steps in this tutorial you will need administrator privileges, so for a better experience, open all prompts in Administrator mode
 
-## Developer tools
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#developer-tools">Developer Tools</a>
+      <ul>
+        <li><a href="#git">Git</a></li>
+        <li><a href="#chocolatey">Chocolatey</a></li>
+        <li><a href="#docker">Docker</a></li>
+        <li><a href="#postman">Postman</a></li>
+        <li><a href="#k6">k6</a></li>
+        <li><a href="#visual-studio">Visual Studio</a></li>
+        <li><a href="#terminal">Terminal</a></li>
+        <li><a href="#wsl">WSL</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#cloud-and-iac">Cloud and IaC</a>
+      <ul>
+        <li><a href="#azure">Azure</a></li>
+        <li><a href="#terraform">Terraform</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+## Developer Tools
 
 ### Git
 ```powershell
@@ -62,15 +90,13 @@ choco install nerd-fonts-meslo
 
 Because we want Windows Terminal to be able to render the icons in the powerlevel10k theme correctly, we need to change the Windows Terminal configuration to use the Nerd-Font we've downloaded before. Click on Settings in the Windows Terminal menu and edit the settings.json file with your favorite text editor.
 
-Find your wsl2 profile and add the line 
+Find your wsl2wsl add the line 
 ```json
 "fontFace": "MesloLGL Nerd Font"
 ```
 
 ### WSL
-[Documentation](https://aka.ms/wsl)
-
-For WSL installation, first you need to enable linux subsystem feature and virtual machine
+[DocumentationWSL://aka.ms/wsl)wsl wsl installationWSL you need to enable linux subsystem feature and virtual machine
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
@@ -78,34 +104,34 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-Once your computer is restarted and WSL 1 is installed, upgrade it to WSL 2 and set it as default
+Once your computer is restarted and wsl 1WSL, upgrade it to wsl 2WSL it as default
 ```powersehll
-wsl --upgrade
-```
+wsl --wsl
 ```powersehll
-wsl --set-default-version 2
+wsl --wsl-version 2
 ```
 
-After WSL 2 upgrade, search for linux distribution and install it
+After wsl 2WSL search for linux distribution and install it
 ```powershell
-wsl --list --online
+wsl --wslonline
 ```
 ```powershell
-wsl --install -d Ubuntu-20.04
+wsl --wsl Ubuntu-20.04
 ```
 
-Create a .wslconfig file inside your %userprofile% folder to set global settings like memory limit:
+Create a .wslconfigwsl your %userprofile% folder to set global settings like memory limit:
 ```powershell
-New-Item -Path $env:USERPROFILE -Name .wslconfig
-```
-```
-[wsl2]
-memory=3GB
+New-Item -Path $env:USERPROFILE -Name .wslconfigwsl
+[wsl2wsl=3GB
 processors=2
 ```
 
 > [!NOTE]
-> Once WSL and Linux distribution is intalled I used [Linux Or WSL Developer Environment](../linux-developer-env/README.md)
+> Once wsl andWSL is intalled I used [Linux Or wsl DeveloperWSLlinux-developer-env/README.md)
+
+<p align="right">(<a href="#windows-developer-environment">back to top</a>)</p>
+
+## Cloud and IaC
 
 ### Azure
 [Microsoft Azure](https://azure.microsoft.com/pt-br/) is a cloud computing platform and a suite of services offered by Microsoft. It provides a wide range of cloud services, including computing power, storage, networking, databases, artificial intelligence (AI), machine learning (ML), analytics, Internet of Things (IoT), and mor
@@ -129,3 +155,4 @@ So to install Terraform CLI from chocolatey:
 ```powershell
 choco install terraform
 ```
+<p align="right">(<a href="#windows-developer-environment">back to top</a>)</p>

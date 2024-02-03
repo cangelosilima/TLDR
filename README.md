@@ -1,6 +1,6 @@
 # TLDR Hub
 
-<img alt="Awesome GitHub Profile Readme" src="./.img/tldr-logo.jpg"> </img>
+<img alt="Awesome GitHub Profile Readme" src="./assets/img/tldr-logo.jpg"> </img>
 
 *TLDR*, short for 'Too Long; Didn't Read,' is a widely recognized acronym used to succinctly summarize extensive pieces of text, articles, or documents.
 

@@ -158,3 +158,34 @@ So to install Terraform CLI from chocolatey:
 choco install terraform
 ```
 <p align="right">(<a href="#windows-developer-environment">back to top</a>)</p>
+
+
+### Python
+[Python](https://www.python.org/) is a high-level, interpreted programming language known for its simplicity and readability, making it a popular choice for beginners and experienced developers alike. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and simplicity, using significant indentation to define code blocks rather than curly braces or keywords.
+
+To install Python from chocolatey. After that restart your computer.
+```powershell
+choco install python --version=3.12.3 -y
+```
+
+Chocolatey installation should add Python installation path to `PATH` environment variable. But if that doesn't happen you shoukd add it manually:
+```powershell
+[System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Python312;C:\Python312\Scripts", [System.EnvironmentVariableTarget]::Machine)
+```
+
+To check if Python is corretly installed, run:
+```
+python --version
+```
+
+If you receive the following error, there will be an aditional step to disable one of the two paths of python installed:
+```
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+```
+```powershell
+Remove-Item -Path "C:\Users\cange\AppData\Local\Microsoft\WindowsApps\python.exe"
+```
+
+`pip` is the package installer for Python, which allows you to install and manage additional libraries and dependencies that are not included in the standard Python library. To install it:
+```
+

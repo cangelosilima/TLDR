@@ -189,3 +189,17 @@ Remove-Item -Path "C:\Users\cange\AppData\Local\Microsoft\WindowsApps\python.exe
 `pip` is the package installer for Python, which allows you to install and manage additional libraries and dependencies that are not included in the standard Python library. To install it:
 ```
 
+```
+### NPM
+[NPM](https://www.npmjs.com/) (Node Package Manager) is the default package manager for the Node.js runtime environment. It is used to install, manage, and share software packages (modules) written in JavaScript, for both backend and frontend projects.
+
+To install npm from chocolatey:
+```powershell
+choco install nodejs -y
+```
+
+Check installation:
+```powershell
+node -v
+```
+

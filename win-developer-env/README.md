@@ -203,3 +203,27 @@ Check installation:
 node -v
 ```
 
+### [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) is an AI-powered development assistant that helps with coding tasks directly in your terminal and IDE.
+
+To install Claude Code globally:
+```powershell
+npm install -g @anthropic-ai/claude-code
+```
+
+#### VS Code Extension
+To install the Claude Code extension in Visual Studio Code:
+
+1. **Method 1: Via VS Code Marketplace**
+   - Open VS Code
+   - Go to Extensions (Ctrl+Shift+X)
+   - Search for "Claude Code"
+   - Click Install
+
+2. **Method 2: Via Command Line**
+   ```powershell
+   code --install-extension anthropic.claude-code
+   ```
+
+After installation, you can access Claude Code directly from VS Code's command palette (Ctrl+Shift+P) by typing "Claude Code" or use the dedicated Claude Code panel.
+

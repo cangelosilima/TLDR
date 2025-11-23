@@ -70,15 +70,41 @@ choco install k6
 ### Visual Studio
 
 #### Code
-Download from https://code.visualstudio.com/docs
+Visual Studio Code (VS Code) is a free, lightweight, open-source code editor created by Microsoft.
+It’s one of the most popular development tools in the world because it is fast, customizable, and supports almost every programming language and framework.
 
-Code Extensions:
-* Themes
-  * [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
-  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  * [Material Icon](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-* Compilers
-  * [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+```powershell
+winget install Microsoft.VisualStudioCode
+```
+#### Code Extensions
+[C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+```powershell
+code --install-extension ms-dotnettools.csdevkit
+```
+[MSSQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssqlt)
+```powershell
+code --install-extension ms-mssql.mssql
+```
+[Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+```powershell
+code --install-extension dracula-theme.theme-dracula
+```
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+```powershell
+code --install-extension esbenp.prettier-vscode
+```
+[Material Icon](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+```powershell
+code --install-extension PKief.material-icon-theme
+```
+[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+```powershell
+code --install-extension formulahendry.code-runner
+```
+[Claude Code for VS Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
+```powershell
+code --install-extension anthropic.claude-code
+```
 
 ### Terminal
 https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701?hl=pt-br&gl=BR
@@ -214,16 +240,10 @@ npm install -g @anthropic-ai/claude-code
 #### VS Code Extension
 To install the Claude Code extension in Visual Studio Code:
 
-1. **Method 1: Via VS Code Marketplace**
-   - Open VS Code
-   - Go to Extensions (Ctrl+Shift+X)
-   - Search for "Claude Code"
-   - Click Install
-
 2. **Method 2: Via Command Line**
-   ```powershell
-   code --install-extension anthropic.claude-code
-   ```
+ ```powershell
+ code --install-extension anthropic.claude-code
+ ```
 
 After installation, you can access Claude Code directly from VS Code's command palette (Ctrl+Shift+P) by typing "Claude Code" or use the dedicated Claude Code panel.
 

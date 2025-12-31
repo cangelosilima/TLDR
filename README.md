@@ -10,3 +10,5 @@ Now, in the spirit of brevity and efficiency, welcome to my TLDR hub—a dedicat
 As a .NET developer and using a Windows machine I summarized all my windows configuration at [> Windows Developer Environment](/win-developer-env/README.md).
 
 Additionally, for using WSL I configured a Linux distribution at [> Linux Or WSL Developer Environment](/linux-developer-env/README.md)
+
+For cloud-based development with GitHub Codespaces, check out [> GitHub Codespaces Environment](/codespace-env/README.md)

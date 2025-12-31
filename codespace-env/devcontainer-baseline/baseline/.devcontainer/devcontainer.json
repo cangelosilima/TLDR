@@ -1,0 +1,78 @@
+ {
+    "name": "baseline-dotnet8-node-react",
+    "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.vscode-node-azure-pack",
+                "ms-vscode-remote.remote-containers",
+                "ms-dotnettools.vscode-dotnet-runtime",
+                "ms-dotnettools.csdevkit",
+                "ms-dotnettools.csharp",
+                "ms-mssql.mssql",
+                "ms-mssql.sql-database-projects-vscode",
+                "GitHub.copilot",
+                "GitHub.codespaces",
+                "GitHub.vscode-github-actions",
+                "dracula-theme.theme-dracula",
+                "anthropic.claude-code",
+                "PKief.material-icon-theme",
+                "inferrinizzard.prettier-sql-vscode",
+                "bierner.markdown-mermaid",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "oderwat.indent-rainbow",
+                "hbenl.vscode-test-explorer",
+                "IBM.output-colorizer",
+                "vitest.explorer"
+            ]
+        }
+    },
+    "postCreateCommand": "dotnet restore backend && npm install --prefix frontend",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "version": "2"
+        },
+        "ghcr.io/devcontainers/features/powershell:1": {
+            "version": "latest"
+        },
+        "ghcr.io/azure/azure-dev/azd:0": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "installOhMyZsh": "true",
+            "upgradePackages": "true"
+        },
+        "ghcr.io/devcontainers/features/dotnet:2": {
+            "version": "none",
+            "dotnetRuntimeVersions": "8.0",
+            "aspNetCoreRuntimeVersions": "8.0"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
+    },
+    "forwardPorts": [5173, 3000, 5000, 5001],
+    "portsAttributes": {
+        "5000": {
+            "label": "Backend HTTP",
+            "onAutoForward": "openBrowser"
+        },
+        "5001": {
+            "label": "Backend HTTPS",
+            "onAutoForward": "openBrowser"
+        },
+        "3000": {
+            "label": "Frontend React",
+            "onAutoForward": "openBrowser"
+        },
+        "5173": {
+            "label": "Vite Dev Server",
+            "onAutoForward": "openBrowser"
+        }
+    }
+}
